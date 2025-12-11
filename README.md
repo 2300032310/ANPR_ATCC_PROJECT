@@ -55,8 +55,8 @@ Python, Streamlit, Pandas, Matplotlib, OpenCV, SQLite, Ultralytics YOLOv8, Googl
 (We kept our environment lightweight so it can run on mid-range systems too.)
 
 --------------------------------------------------------------------------
-🛠 **Data Flow Overview
-ATCC Processing**
+🛠 **Data Flow Overview**
+**ATCC Processing**
 
 Traffic videos → YOLOv8 frame analysis → vehicle categories counted → final results saved as CSV.
 
@@ -66,27 +66,9 @@ Plate images → YOLO detection → OCR text extraction → stored into separate
 
 These CSVs are then imported into the dashboard for consolidated analysis.
 
---------------------------------------------------------------------------
-**📂 Project Directory (VS Code)**
-ANPR_AND_ATCC/
-│
-├── data/
-│   └── logs/
-│       ├── atcc_results.csv        # Final output of the ATCC pipeline
-│       └── anpr_results.csv        # Final output of the ANPR pipeline
-│
-├── db/
-│   └── init_db.py                  # Script to load all CSV data into one database
-│
-├── streamlit_app/
-│   └── app.py                      # Unified dashboard with two separate views
-│
-├── traffic.db                      # Auto-generated SQLite DB
-└── requirements.txt
-
-
 --------------------------------------------------------------------
 **🧩 Running the Project in VS Code**
+
 **1. Navigate to the folder**
 cd ANPR_AND_ATCC
 
