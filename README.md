@@ -84,6 +84,7 @@ ANPR_AND_ATCC/
 ├── traffic.db                      # Auto-generated SQLite DB
 └── requirements.txt
 
+
 --------------------------------------------------------------------
 **🧩 Running the Project in VS Code**
 **1. Navigate to the folder**
